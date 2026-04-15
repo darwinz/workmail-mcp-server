@@ -1,0 +1,24 @@
+{
+  "name": "workmail-mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --outfile=dist/index.js --format=cjs --external:@modelcontextprotocol/sdk --external:deasync",
+    "start": "node dist/index.js",
+    "dev": "npx tsx src/index.ts",
+    "setup-credentials": "npx tsx src/setup-credentials.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "ews-javascript-api": "^0.15.3",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}
