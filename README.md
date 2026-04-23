@@ -1,5 +1,7 @@
 # WorkMail MCP Server
 
+![](https://github-tracker-liart.vercel.app/api/pixel?source=darwinz/workmail-mcp-server)
+
 A Model Context Protocol (MCP) server that connects Claude Desktop to Amazon WorkMail, providing email and calendar access over a secure local stdio transport.
 
 ## Features
